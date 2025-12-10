@@ -104,19 +104,19 @@ let bgAudioWasMuted = false;
 let shuffleOrder = [];
 
 let albumTracks = [
-  { name: "Intro (End of the World)", src: "https://github.com/user-attachments/files/24076773/Intro.End.Of.The.World.mp3" },
-  { name: "Bye", src: "https://github.com/user-attachments/files/24076747/Bye.mp3" },
-  { name: "Don't Wanna Break Up Again", src: "https://github.com/user-attachments/files/24076756/Don.T.Wanna.Break.Up.Again.mp3" },
-  { name: "Saturn Returns Interlude", src: "https://github.com/user-attachments/files/24076779/Saturn.Returns.Interlude.mp3" },
-  { name: "Eternal Sunshine", src: "https://github.com/user-attachments/files/24076768/Eternal.Sunshine.mp3" },
-  { name: "Supernatural", src: "https://github.com/user-attachments/files/24076776/Supernatural.mp3" },
-  { name: "True Story", src: "https://github.com/user-attachments/files/24076760/True.Story.mp3" },
-  { name: "The Boy Is Mine", src: "https://github.com/user-attachments/files/24076777/The.Boy.Is.Mine.mp3" },
-  { name: "Yes, And?", src: "https://github.com/user-attachments/files/24076763/Yes.And_.mp3" },
-  { name: "We Can't Be Friends (Wait for Your Love)", src: "https://github.com/user-attachments/files/24076753/We.Can.T.Be.Friends.Wait.For.Your.Love.mp3" },
-  { name: "I Wish I Hated You", src: "https://github.com/user-attachments/files/24076758/I.Wish.I.Hated.You.mp3" },
-  { name: "Imperfect for You", src: "https://github.com/user-attachments/files/24076771/Imperfect.For.You.mp3" },
-  { name: "Ordinary Things", src: "https://github.com/user-attachments/files/24076754/Ordinary.Things.mp3" }
+  { name: "Intro (End of the World)", src: "assets/audio/album/Intro (End Of The World).mp3" },
+  { name: "Bye", src: "assets/audio/album/Bye.mp3" },
+  { name: "Don't Wanna Break Up Again", src: "assets/audio/album/Don't Wanna Break Up Again.mp3" },
+  { name: "Saturn Returns Interlude", src: "assets/audio/album/Saturn Returns Interlude.mp3" },
+  { name: "Eternal Sunshine", src: "assets/audio/album/Eternal Sunshine.mp3" },
+  { name: "Supernatural", src: "assets/audio/album/Supernatural.mp3" },
+  { name: "True Story", src: "assets/audio/album/True Story.mp3" },
+  { name: "The Boy Is Mine", src: "assets/audio/album/The Boy Is Mine.mp3" },
+  { name: "Yes, And?", src: "assets/audio/album/Yes, And?.mp3" },
+  { name: "We Can't Be Friends (Wait for Your Love)", src: "assets/audio/album/We Can't Be Friends (Wait for Your Love).mp3" },
+  { name: "I Wish I Hated You", src: "assets/audio/album/I Wish I Hated You.mp3" },
+  { name: "Imperfect for You", src: "assets/audio/album/Imperfect for You.mp3" },
+  { name: "Ordinary Things", src: "assets/audio/album/Ordinary Things.mp3" }
 ];
 let animationTimeouts = [];
 
@@ -459,4 +459,5 @@ playlistToggleBtn.addEventListener("click", () => {
 // Load first track and render playlist
 loadTrack(1);
 renderPlaylist();
+
 
