@@ -92,6 +92,7 @@ const playlist = document.getElementById("playlist");
 const playlistItems = document.getElementById("playlistItems");
 const toggleIcon = document.getElementById("toggleIcon");
 const progressTooltip = document.getElementById("progressTooltip");
+const playPauseIcon = document.getElementById("playPauseIcon");
 
 let state = "closed"; // 'closed' → 'envelope-open' → 'letter-taken' → 'letter-open'
 let currentLang = "jp";
@@ -274,7 +275,8 @@ function renderPlaylist() {
         isAudioMuted = true;
       }
       albumAudio.play();
-      playPauseBtn.textContent = "⏸";
+      playPauseIcon.src = "assets/img/pause.png";
+      playPauseIcon.alt = "Pause";
     });
     
     playlistItems.appendChild(item);
@@ -334,10 +336,12 @@ playPauseBtn.addEventListener("click", () => {
       isAudioMuted = true;
     }
     albumAudio.play();
-    playPauseBtn.textContent = "⏸";
+    playPauseIcon.src = "assets/img/pause.png";
+    playPauseIcon.alt = "Pause";
   } else {
     albumAudio.pause();
-    playPauseBtn.textContent = "▶";
+    playPauseIcon.src = "assets/img/play.png";
+    playPauseIcon.alt = "Play";
   }
 });
 
@@ -352,7 +356,8 @@ prevBtn.addEventListener("click", () => {
       isAudioMuted = true;
     }
     albumAudio.play();
-    playPauseBtn.textContent = "⏸";
+    playPauseIcon.src = "assets/img/pause.png";
+    playPauseIcon.alt = "Pause";
   }
 });
 
@@ -367,7 +372,8 @@ nextBtn.addEventListener("click", () => {
       isAudioMuted = true;
     }
     albumAudio.play();
-    playPauseBtn.textContent = "⏸";
+    playPauseIcon.src = "assets/img/pause.png";
+    playPauseIcon.alt = "Pause";
   }
 });
 
@@ -420,7 +426,8 @@ albumAudio.addEventListener("ended", () => {
       }
       albumAudio.play();
     } else {
-      playPauseBtn.textContent = "▶";
+      playPauseIcon.src = "assets/img/play.png";
+      playPauseIcon.alt = "Play";
     }
   }
 });
